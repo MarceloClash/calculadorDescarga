@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Descarga</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/script.js"  defer></script>
+  </head>
+  <body>
+    <h1>Calculadora Descarga</h1>
+    <form id="form-calculadora">
+      <label for="valor">Valor:</label>
+      <input type="number" id="valor" name="valor" min="0" required /> <br />
+      <label for="operacao">Operação:</label>
+      <select id="operacao" name="operacao" required>
+        <option value="multiplicar">Multiplicar Tonelada por R$ 0,01461</option>
+        <option value="volume">Multiplicar Volume por R$ 0,34</option>
+      </select>
+      <br />
+      <label for="quantidade">Dividir por:</label>
+      <input type="number" id="quantidade" name="quantidade" min="1" required />
+      <br />
+      <button type="submit">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+  </body>
+</html>
